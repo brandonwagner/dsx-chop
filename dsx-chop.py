@@ -1,3 +1,12 @@
+# This script takes large output files from Datastage
+# and splits them into multiple individual .dsx files
+# (usually for purposes of source control.) The 
+# input/output folders are expected in directory where
+# this file exists. Place your large .dsx files in the 
+# input directory and run the script. Output directory
+# will contain individual .dsx items contained within 
+# those large .dsx files. Only DSJOB and DSTABLEDEFS
+# are supported by this script at the moment.
 import os
 import glob
 import re
